@@ -361,7 +361,7 @@ function renderHome() {
     <div class="view home-view">
       <header class="hdr hdr-flat">
         <span class="logo">GYM</span>
-        <span class="badge">Arianit</span>
+        <span class="badge">Hypertrophy</span>
       </header>
       <div class="week-scheme">Ipertrofia — cedimento tecnico · rec. 1'–2'</div>
       <div class="workout-cards">${cards}</div>
@@ -418,7 +418,7 @@ function renderWorkout(w) {
         <div class="hdr-main">
           <button class="back" onclick="leaveWorkout()">←</button>
           <span class="hdr-title">Workout ${w}</span>
-          <span class="badge">Cappucci</span>
+          <span class="badge">Workout ${w}</span>
         </div>
         <div id="timer-bar" class="timer-bar hidden">
           <span class="timer-label">RECUPERO</span>
