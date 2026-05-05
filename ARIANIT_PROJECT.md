@@ -55,7 +55,7 @@ git push
 |---|-----------|-----------|---------|------|
 | 1 | Stacco da Terra | 4×3 | 2' | 1RM: 170kg |
 | 2 | Pull up | 4×5-6RM | 1' | Sett.2: 10kg zavorra |
-| 3 | Low Row | 4×5-6RM | 1' | Sett.2: 58kg |
+| 3 | Pulley | 4×5-6RM | 1' | Sett.2: 58kg |
 | 4 | Straight Arm Pulldown | 4×5-6RM | 1' | — |
 | 5 | Pushdown | 4×5-6RM | 1' | Sett.2: 60kg |
 | 6 | Seated Db French Press | 4×5-6RM | 1' | — |

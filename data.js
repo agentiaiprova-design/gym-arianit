@@ -14,7 +14,7 @@ const WORKOUTS = {
   B: [
     { id: 'deadlift',         name: 'Stacco da Terra',          type: 'strength', sets: 4, reps: '3',     rest: 120, note: '1RM: 170kg' },
     { id: 'pull_up',          name: 'Pull up',                  type: 'fixed',    sets: 4, reps: '5-6RM', rest: 60,  note: 'Sett.2: 10kg zavorra' },
-    { id: 'low_row',          name: 'Low Row',                  type: 'fixed',    sets: 4, reps: '5-6RM', rest: 60,  note: 'Sett.2: 58kg' },
+    { id: 'low_row',          name: 'Pulley',                   type: 'fixed',    sets: 4, reps: '5-6RM', rest: 60,  note: 'Sett.2: 58kg' },
     { id: 'str_pull_b',       name: 'Straight Arm Pulldown',    type: 'fixed',    sets: 4, reps: '5-6RM', rest: 60  },
     { id: 'pushdown_b',       name: 'Pushdown',                 type: 'fixed',    sets: 4, reps: '5-6RM', rest: 60,  note: 'Sett.2: 60kg' },
     { id: 'french_press',     name: 'Seated Db French Press',   type: 'fixed',    sets: 4, reps: '5-6RM', rest: 60  },
