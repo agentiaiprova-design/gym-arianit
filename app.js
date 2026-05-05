@@ -5,6 +5,7 @@ const STORAGE_KEY = 'gym_sessions_arianit_v1';
 let activeSession = null;
 let timerInterval = null;
 let timerRemaining = 0;
+let timerEndTime = null;
 
 // ── Storage ───────────────────────────────────────────────────────────────────
 
@@ -90,11 +91,12 @@ function playBeep() {
 
 function startTimer(restSec) {
   stopTimer();
+  timerEndTime = Date.now() + restSec * 1000;
   timerRemaining = restSec;
   updateTimerDisplay();
   showTimer();
   timerInterval = setInterval(() => {
-    timerRemaining--;
+    timerRemaining = Math.max(0, Math.round((timerEndTime - Date.now()) / 1000));
     updateTimerDisplay();
     if (timerRemaining <= 0) {
       stopTimer();
@@ -108,7 +110,15 @@ function stopTimer() {
   if (timerInterval) { clearInterval(timerInterval); timerInterval = null; }
 }
 
-function skipTimer() { stopTimer(); hideTimer(); timerRemaining = 0; }
+function skipTimer() { stopTimer(); hideTimer(); timerRemaining = 0; timerEndTime = null; }
+
+document.addEventListener('visibilitychange', () => {
+  if (!document.hidden && timerEndTime) {
+    timerRemaining = Math.max(0, Math.round((timerEndTime - Date.now()) / 1000));
+    updateTimerDisplay();
+    if (timerRemaining <= 0) stopTimer();
+  }
+});
 
 function updateTimerDisplay() {
   const numEl = document.getElementById('timer-num');
